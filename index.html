@@ -16,8 +16,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
             </tr>
             <tr id="row2">
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -30,8 +32,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
             </tr>
             <tr id="row4">
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -44,8 +48,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
             </tr>
             <tr id="row6">
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -55,7 +61,7 @@
             </tbody>
         </table>
         <div class="input-container">
-            <input id="input" type="text" maxlength="5" minlength="5">
+            <input id="input" type="text" maxlength="6" minlength="4">
             <button>Enter!</button>
         </div>
         <div>
@@ -65,7 +71,7 @@
     </div>
 </div>
 <script>
-    const answer = ["CRANE", "LILLY", "FJORD"]; //todo make this random word
+    const answer = [ "GATKA", "SINGH", "SIKHI", "JHATKA", "DAANG", "ARDAS", "LANGAR", "KIRPAN", "DEGH", "DAAL", "BARSHA" ]; //todo make this random word
     const board = document.getElementById('board');
     const textBox = document.querySelector('input');
     const submitButton = document.querySelector('button');
@@ -79,7 +85,7 @@
 
     submitButton.addEventListener('click', function(e){
         let guess = textBox.value;
-        if (guess.length !==5){
+        if (guess.length >6){
             return //don't accept words that aren't 5 letters long
         }
         //clear the textbox once you hit submit
