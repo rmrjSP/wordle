@@ -65,14 +65,20 @@
     </div>
 </div>
 <script>
-    const answer = ["CRANE", "LILLY", "FJORD", "JHTKA"]; //todo make this random word
+    const answer = ["CRANE", "LILLY", "FJORD"]; //todo make this random word
     const board = document.getElementById('board');
     const textBox = document.querySelector('input');
     const submitButton = document.querySelector('button');
     const gameOverMessage = document.getElementById('game-over');
     const answerInput = document.getElementById('input');
     const restartButton = document.getElementById('restart');
-   
+    const row1 = document.getElementById('row1');
+    const row2 = document.getElementById('row2');
+    const row3 = document.getElementById('row3');
+    const row4 = document.getElementById('row4');
+    const row5 = document.getElementById('row5');
+    const row6 = document.getElementById('row6');
+    const tableData = document.getElementsByTagName('td')
 
     let currentGuessNumber = 0
     let randomAnswer = answer[Math.floor(Math.random()*answer.length)];
